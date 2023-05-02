@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="https://logos-download.com/wp-content/uploads/2016/03/Starbucks_Logo_2011.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>   
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nisi quisquam deserunt nostrum molestiae, a dolor vitae temporibus illo consequuntur corrupti iste placeat enim iusto. Veritatis quis minima possimus a.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img  class="starbucks" src="./assets/images/img.jpg" alt="" id="imgClickAndChange">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./assets/images/thumb1.png" alt="" class="thumb1" onclick="imgSlider (thumb1.png);changeBgColor('#333')"></li>
+            <li><img src="./assets/images/thumb2.png" alt="" class="thumb2" onclick="imgSlider (thumb2.png);changeBgColor('#222')"></li>
+            <li><img src="./assets/images/thumb3.png" alt="" class="thumb3" onclick="imgSlider (thumb3.png);changeBgColor('#111')"></li>
+        </ul>
+        <ul class="sci"> 
+            <li><a href=""><img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="" width="50px"></a></li>
+            <li><a href=""><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="" width="50px"></a></li>
+            <li><a href=""><img src="https://static.vecteezy.com/system/resources/previews/018/930/473/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="" width="80"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+       function imgSlider(anything){
+        document.querySelector('.starbuck').src= anything;
+       }
+       function changeBgColor(color){
+        const sec = document.querySelector('.content');
+        sec.style.background = color;
+       }
+    </script>
+</body>
+</html>
